@@ -47,18 +47,18 @@ function draw () {
         player.messagingSetup ()
         player.messageSetupExecuted = true;
     }   else {
-        // if (!seconds[0] && player.messageSetupExecuted) {
-        //     const n = World.seconds;
-        //     console.log (`${world.seconds} n: ${n}`)
-        //     seconds.push (n);
+         if (!seconds[0] && player.messageSetupExecuted) {
+             const n = World.seconds;
+             console.log (`${world.seconds} n: ${n}`)
+             seconds.push (n);
 
-        //     m = n + 3;
-        //     console.log (m);
-        // }
+         m = n + 3;
+             console.log (m);
+         }
 
-        // if (World.seconds === m) {
-        //     game.gameStart ();
-        // }
+         if (World.seconds === m) {
+             game.gameStart ();
+        }
     }
 
     drawSprites ();
